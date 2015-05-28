@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body {margin:20px auto 50px auto; width: 1200px;
+    background-color: rgba(175, 238, 238, 0.2); }
+h1 {text-align:center;font-size: 40px;}
+h3 {font-size: 25px;color:#A52A2A;}
+.line {height:5px;width:1200px; background-color: #4169E1;margin: 20px auto;}
+.jianjie {display: block;clear:both;}
+.jianjie .text {float: left; width:65%;font-size: 20px;clear: both;}
+.jianjie img{float: right; width: 30%;margin-bottom: 10px;}
+
+#t1 {height:630px;}
+#t2 {height:500px;}
+
+.show {font-size: 25px;font-weight: bold;}
+.biaoti {color:#00BFFF; }
+p {line-height:130%}
+#title img{float:left; width: 10%;}
+
+</style>
+<link rel="shortcut icon" href="favicon.ico" />
+<title>项目展示</title>
+</head>
+
+<body>
+
+<div id='title'>
+<img src="dislab.png" width=10% height=10%></img>
+<h1>面向国产服务器的云计算支撑技术研究</h1>
+</div>
+
+<div class='line'></div>
+
+<div class='content'>
+
+<div class='jianjie' id='t1'>
+    <div class='text'>
+        <h3>基于网络编码的云存储一体机系统</h3>
+        <p class='biaoti'>系统简介</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;融合网络编码和云计算的核心思想，以开源软件HDFS/Hadoop为基础，通过软硬件相结合技术途径，设计并实现了一个基于网络编码的云存储一体机系统。该系统融合了网络编码的最新研究进展，为大规模海量信息存储提供了一个低冗余、低能耗、可扩展的分布式存储平台。</p>
+        <p class='biaoti'>系统结构</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;系统由全局唯一的NameNode以及若干DataNode组成。NameNode负责元数据存储，DataNode负责数据文件存储。存储文件时，先与NameNode进行通信，创建元数据，随后由NameNode选择合适的存储节点保存文件。访问文件时，首先与NameNode交互，获得待访问文件的存储位置，然后与存有该文件所对应的DataNode进行数据的传输。文件的容错存储及访问均基于网络编码技术实现。
+        </p>
+        <p class='biaoti'>研究成果</p>
+        <p><li>在业界首次基于主流开源云存储平台HDFS/Hadoop研制了基于网络编码的分布式云存储系统，有效解决了海量数据容错存储的冗余问题</li>
+        <li>研究工作得到了国家电网公司“信息系统软硬件资源及分布式文件管理等关键技术研究及应用”和“基于国产服务器的分布式文件系统关键技术研究”两个项目的连续资助，作为建立基于国产服务器的数据存储方案的支撑平台</li>
+        <li>申请发明专利8项</li></p>
+    </div>
+<img src="yanshi1.png" width=30% height=30%></img>
+<img src="yanshi2.png" width=30% height=30%></img>
+<img src="yanshi3.png" width=30% height=30%></img>
+</div>
+
+<div class='show'>
+<a href="http://dislab0:50070/dfshealth.jsp">
+    <img src="tubiao1.jpg" width=3% height=3%></img>系统演示
+</a>
+</div>
+</div>
+
+<div class='line'></div>
+
+<div class='content'>
+
+
+<div class='jianjie' id='t2'>
+    <div class='text'>
+        <h3>基于IPMI的物理机故障监控系统</h3>
+    <p class='biaoti'>系统简介</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;针对对云计算中集群物理机的故障监控问题所设计的系统，使用IPMI（智能平台管理接口）作为监控手段，实现系统对物理机的故障信息进行准确的监控</p>
+    <p class='biaoti'>系统结构</p>
+    <p>
+    <li>良好的用户体验：优化用户交互流程，通过使用响应式布局、长连接等前端技术重点优化了用户体验和使用感受</li>
+    <li>高效的性能：通过对问题I/O-bound特性的分析，使用事件驱动的异步模型来对查询流程进行性能优化，并同时使用了数据库连接池等技术，力求最大化的利用服务器资源</li>
+    <li>优秀的可拓展性：通过对基本架构进行去耦合，使本项目比起一般的Web模式应用具有更好的可拓展性，通过合适的拓展可以应对大量的并发机器监控请求</li>
+    <li>多平台支持：对SEL解释器的插件式设计使SEL的解释流程变得更加灵活，可以轻松应对不同物理机平台不同格式内容的SEL解释工作</li>
+    </p>
+
+    </div>
+    <img src="yanshi2-1.png" width=30% height=55%></img>
+    <img src="yanshi2-2.png" width=30% height=45%></img>
+</div>
+
+
+<div class='show'>
+<a href="http://114.212.87.99:9000/">
+    <img src="bubiao2.ico" width=2% height=2%>系统演示</a>
+</div>
+</div>
+
+
+</body>
+</html>
